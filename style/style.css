@@ -1,0 +1,50 @@
+:root {
+    --header-font:"Poppins", sans-serif;
+    --text-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --logo: #EFB036;
+    --btn-col: #23486A;
+    --btn-col-light: #3B6790;
+    --col2: #4C7B8B;
+    --white: #ffffff;
+}
+* {
+    font-family: var(--text-font);
+}
+
+nav {
+    font-family: var(--header-font);
+}
+.top-container {
+    background-color: #23486A;
+    padding: 1rem;
+}
+#navbarIcon {
+    width: 3.5rem;
+    border-radius: 2%;
+}
+#navbarNavAltMarkup {
+    margin-left: 15%;
+}
+.navbar-nav {
+    gap: 0.7rem;
+} 
+.location {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.text p {
+    color: var(--white);
+}
+i {
+    color: var(--logo);
+}
+.top-social {
+    justify-content:right;
+}

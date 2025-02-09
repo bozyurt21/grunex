@@ -6,6 +6,7 @@
     --btn-col-light: #3B6790;
     --col2: #4C7B8B;
     --white: #ffffff;
+    --black: #000000;
 }
 * {
     font-family: var(--text-font);
@@ -47,4 +48,24 @@ i {
 }
 .top-social {
     justify-content:right;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 40rem;
+
+}
+
+.custom-caption h5{
+    font-size: 5rem;
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.custom-caption {
+    position: absolute;
+    top: 30%;
+    left: 50%;
 }

@@ -15,6 +15,13 @@
 nav {
     font-family: var(--header-font);
 }
+
+/* Open Bootstrap dropdown on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
 .top-container {
     background-color: #23486A;
     padding: 1rem;
@@ -35,7 +42,7 @@ nav {
     gap: 0.5rem;
     padding-top: 1rem;
 }
-.text {
+.top-text {
     display: flex;
     justify-content: center;
     gap: 0.8rem;
@@ -68,4 +75,380 @@ i {
     position: absolute;
     top: 30%;
     left: 50%;
+}
+
+footer {
+    background-color: var(--btn-col);
+    color: var(--black);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.footer-section p {
+    color: var(--black);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.footer-section a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid var(--logo);
+    padding-top: 10px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.footer-bottom p {
+   margin-top: 1rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-cont {
+    background-color: var(--col2);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.footer-cont a i {
+    font-size: large;
+}
+
+.footer-cont:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+.home-services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+/* Center the heading */
+.home-services h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: var(--btn-col-light);
+}
+
+/* Grid Layout */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+.services-container a  {
+    text-decoration: none;
+    
+}
+
+.service-box h3, 
+.service-box p {
+    flex-grow: 1;  /* Allows text to grow and distribute space */
+}
+/* Service Box */
+.service-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+    display: flex;           /* Make it flexbox */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: space-between; /* Space items evenly */
+    height: 100%;            /* Make all boxes the same height */
+}
+
+.service-box h3 {
+    color: var(--btn-col);
+}
+
+.service-box p {
+    color: var(--black);
+}
+
+/* Hover Animation */
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Container */
+.service-icon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: var(--btn-col);
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect on Icon */
+.service-box:hover .service-icon {
+    background: var(--btn-col);
+}
+
+/* Fade-in Animation on Scroll */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* About Section Container */
+.about-container {
+    display: flex;                 /* Enables two-column layout */
+    align-items: stretch;          /* Makes both columns the same height */
+    justify-content: space-between;
+    gap: 50px;                     /* Space between text & image */
+    padding: 50px 5%;
+}
+
+.about-container h1 {
+    text-align: center;
+    color: var(--btn-col-light);
+    font-weight: bolder;
+}
+
+/* Text Section */
+.text {
+    flex: 1;                      /* Takes up half of the container */
+    display: flex;
+    flex-direction: column;        /* Stacks text vertically */
+    justify-content: center;       /* Centers text vertically */
+    gap: 15px;                     /* Adds spacing between paragraphs */
+    max-width: 50%;
+}
+
+/* Bold text styling */
+.bold {
+    font-weight: bold;
+    color: var(--btn-col-light);
+}
+
+/* Image Section */
+.image-container {
+    flex: 1;                      /* Ensures equal width with text */
+    max-width: 50%;
+    height: 100%;
+}
+
+/* Image fills the right side without resizing incorrectly */
+.image-container img {
+    width: 100%;                   /* Takes full width */
+    height: 100%;                  /* Takes full height */
+    object-fit: cover;              /* Ensures the image covers the area without distortion */
+    border-radius: 10px;            /* Optional: Rounded corners */
+}
+
+.about-container p {
+    color: var(--black);
+}
+
+/* General Styling */
+.ref-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--btn-col-light);
+    margin-top: 2rem;
+}
+
+/* Banner Container */
+.ref-banner {
+    width: 100%;
+    overflow: hidden;  /* Hides extra images outside the viewport */
+    background: var(--btn-col-light);
+    padding: 3rem 0;
+    margin-bottom: 1rem;
+}
+
+/* Background Wrapper */
+.ref-background {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Image Slider - Moves continuously */
+.ref-slider {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between images */
+    width: 200%; /* Ensure enough space for smooth looping */
+    animation: slide-left 20s linear infinite;
+}
+
+/* Each Image Wrapper */
+.ref-img {
+    min-width: 150px;  /* Ensures all images are equal width */
+    height: 80px;  /* Set height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image Styling */
+.ref-img img {
+    width: auto;
+    height: 100%;
+    object-fit: contain; /* Prevents distortion */
+}
+
+/* Keyframes Animation */
+@keyframes slide-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Container Styling */
+.services-card-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+/* Title Styling */
+.services-card-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Grid Layout for Cards (3 Columns) */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Individual Card */
+.service-card {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Wrapper */
+.service-img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Image Styling */
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Title Overlay */
+.service-card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Paragraph (Initially Hidden) */
+.service-description {
+    padding: 15px;
+    color: #333;
+    font-size: 0.9rem;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.service-card:hover .service-img img {
+    transform: scale(1.1);
+}
+
+.service-card:hover .service-card-title {
+    transform: translateY(-120%);
+}
+
+.service-card:hover .service-description {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.service-cards a {
+    text-decoration: none;
 }

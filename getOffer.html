@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="top-container">
-    <div class="text">
+    <div class="top-text">
       <p style="color:#BCCCDC">Bize Ulaşın:</p>
       <i class="bi bi-envelope-at-fill"></i>
       <p>hakan.topal@gurnex.com.tr</p>
@@ -27,21 +27,33 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg border-bottom border-body" style="background-color: #000000;" data-bs-theme="dark">
           <div class="container-fluid">
-            <a class="nav-link" href="./index.html">
-              <img src="./img/WhatsApp Image 2025-01-30 at 12.45.07.jpeg" id="navbarIcon">
-            </a>
+              <a class="nav-link" href="./index.html">
+                <img src="./img/WhatsApp Image 2025-01-30 at 12.45.07.jpeg" id="navbarIcon">
+              </a> 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" href="./index.html">Anasayfa</a>
-                <a class="nav-link" href="./about.html">Hakkımızda</a>
-                <a class="nav-link" href="./services.html">Hizmetlerimiz</a>
-                <a class="nav-link" href="./refs.html">Referanslarımız</a>
-                <a class="nav-link" href="./blog.html">Blog</a>
-                <a class="nav-link" href="./contact.html">İletişim</a>
-                <a href="./getOffer.html"class="nav-link"><button type="button" class="btn btn-primary btn">Teklif Al</button></a>
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item"><a class="nav-link" href="./index.html">Anasayfa</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./about.html">Hakkımızda</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./services.html" role="button" data-bs-toggle="dropdown">Hizmetlerimiz</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./service1.html">Uzun Dönemli Kurumsal Ticari & Binek Filo Kiralama Hizmeti</a></li>
+                      <li><a class="dropdown-item" href="./service2.html">Soğuk Zincir Taşımaları</a></li>
+                      <li><a class="dropdown-item" href="./service3.html">Soğuk Zincir Depo Çözümleri</a></li>
+                      <li><a class="dropdown-item" href="./service4.html">E-Ticaret Lojistiği</a></li>
+                      <li><a class="dropdown-item" href="./service5.html">İlaç Lojistiği</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="./refs.html">Referanslarımız</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contact.html">İletişim</a></li>
+                  <li class="nav-item"><a href="./getOffer.html"class="nav-link active" aria-current="page"><button type="button" class="btn btn-primary btn">Teklif Al</button></a></li>
+                </ul>
+              
               </div>
             </div>
           </div>
@@ -53,6 +65,47 @@
       <p><a href="./index.html">Anasayfa</a> / Teklif Al</p>
     </div>
 
-    
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section about">
+              <img src="./img/WhatsApp Image 2025-01-30 at 12.45.07.jpeg" style="width:10rem; height:auto; border-radius:10px;">
+          </div>
+          <div class="footer-section links">
+              <h3>Hızlı Linkler</h3>
+              <ul>
+                  <li><a href="./index.html">Anasayfa</a></li>
+                  <li><a href="./about.html">Hakkımızda</a></li>
+                  <li><a href="./services.html">Hizmetlerimiz</a></li>
+                  <li><a href="./refs.html">Referanslarımız</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
+                  <li><a href="./contact.html">İletişim</a></li>
+              </ul>
+          </div>
+          <div class="footer-section services">
+            <h3>Hizmetlerimiz</h3>
+            <ul>
+                <li><a href="./service1.html">Uzun Dönemli Kurumsal Ticari & Binek Filo Kiralama Hizmeti</a></li>
+                <li><a href="./service2.html">Soğuk Zincir Taşımaları</a></li>
+                <li><a href="./service3.html">Soğuk Zincir Depo Çözümleri</a></li>
+                <li><a href="./service4.html">E-Ticaret Lojistiği</a></li>
+                <li><a href="./service5.html">İlaç Lojistiği</a></li>
+            </ul>
+        </div>
+          <div class="footer-section contact">
+              <h3>Contact</h3>
+              <p><i class="bi bi-geo-alt"></i> Veysel Karani Mah. Çolakoğlu Sok. Rings Rezidans No:10/18 Sancaktepe / İstanbul</p>
+              <p><i class="bi bi-envelope-at-fill"></i> hakan.topal@gurnex.com.tr</p>
+              <p><i class="bi bi-telephone-fill"></i> 0 534 735 72 88</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+        <div><p>&copy; 2025 Gurnex. All Rights Reserved.</p></div>
+          <div class="footer-section footer-social">
+            <div class="footer-cont"><a href="#"><i class="bi bi-facebook"></i></a></div>
+            <div class="footer-cont"><a href="https://www.instagram.com/gurnex_lojistik?igsh=MWo3OWxxcWcwbDB2dw=="><i class="bi bi-instagram"></i></a></div>
+            <div class="footer-cont"><a href="#"><i class="bi bi-youtube"></i></a></div>
+        </div>
+      </div>
+  </footer>
 </body>
 </html>

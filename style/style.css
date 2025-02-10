@@ -589,15 +589,41 @@ footer {
     margin: 15px;
     text-decoration: none;
 }
-
-.btn-custom {
-    background-color: var(--btn-col);
-
-    text-decoration: none;
-
+.contact-cont {
+    background: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary:hover {
-    background-color: #e64a19;
-    border-color: #e64a19;
+.contact-cont h2 {
+    margin-bottom: 20px;
+    color: var(--btn-col);
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 150px;
+}
+
+.btn {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e64a19;
 }

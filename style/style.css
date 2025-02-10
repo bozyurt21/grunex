@@ -487,3 +487,117 @@ footer {
     font-weight: 800;
     text-align: center;
 }
+
+.blog-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.blog-container h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: var(--btn-col);
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.blog-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.author-info {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-style: italic;
+    text-align: right;
+    color: #555;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.blog-card {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card h1 {
+    font-size: 1.2rem;
+    margin: 15px;
+    color: var(--btn-col);
+}
+
+.blog-card p {
+    font-size: 0.9rem;
+    margin: 0 15px 10px;
+    color: #555;
+}
+
+.blog-card span {
+    display: block;
+    font-size: 0.8rem;
+    margin: 0 15px;
+    color: #777;
+}
+
+.blog-card a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.btn-custom {
+    background-color: var(--btn-col);
+
+    text-decoration: none;
+
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+    border-color: #e64a19;
+}

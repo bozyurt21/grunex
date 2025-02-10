@@ -9,12 +9,29 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "autoprefixer": "^10.4.20",
+    "lodash": "^4.17.21",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.5.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "serialize-javascript": "^6.0.2",
+    "svgo": "^2.8.0",
+    "terser-webpack-plugin": "^5.3.11",
+    "webpack": "^5.97.1",
+    "yargs-parser": "^21.1.1"
+  },
+  "resolutions": {
+    "nth-check": "^2.1.1",
+    "postcss": "^8.5.1",
+    "svgo": "^2.8.0",
+    "@svgr/webpack": "^5.5.0",
+    "resolve-url-loader": "^5.0.0"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
 }
-

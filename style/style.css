@@ -452,3 +452,38 @@ footer {
 .service-cards a {
     text-decoration: none;
 }
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px ;
+    height: 300px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contact-info {
+    flex: 1;
+    background: var(--col2);
+    color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    color:var(--btn-col);
+    font-weight: 800;
+    text-align: center;
+}

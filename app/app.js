@@ -1,16 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let serviceBoxes = document.querySelectorAll(".hidden");
-
-    function revealOnScroll() {
-        let windowHeight = window.innerHeight;
-        serviceBoxes.forEach(function (box) {
-            let boxTop = box.getBoundingClientRect().top;
-            if (boxTop < windowHeight - 50) {
-                box.classList.add("visible");
+    const hiddenElements = document.querySelectorAll('.hidden');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
             }
         });
-    }
+    }, { threshold: 0.1 });
 
-    window.addEventListener("scroll", revealOnScroll);
-    revealOnScroll(); // Run once on page load
+    hiddenElements.forEach(el => observer.observe(el));
 });

@@ -236,6 +236,12 @@ footer {
 }
 
 /* Fade-in Animation on Scroll */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
 .visible {
     opacity: 1;
     transform: translateY(0);
@@ -725,6 +731,11 @@ textarea {
         align-items: center;
         text-align: center;
     }
+    .top-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -739,6 +750,13 @@ textarea {
     .service-box {
         padding: 20px;
     }
+    .service-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service-img, .image-container img {
+        display: block;
+        margin: 0 auto;
+    }
     .document-card {
         padding: 10px;
     }
@@ -748,5 +766,9 @@ textarea {
     .footer-container, .footer-bottom {
         flex-direction: column;
         text-align: center;
+    }
+    .contact-cont {
+        width: 80%;
+        margin: 20px auto;
     }
 }
